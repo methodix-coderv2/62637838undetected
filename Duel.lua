@@ -5492,7 +5492,7 @@ end)()
         end
         _lastPing = _pm
     end)
-
+task.spawn(function() while task.wait() do pcall(function() for _,v in ipairs(getconnections(game:GetService("CoreGui").RobloxGui.SettingsClippingShield.SettingsShield.MenuContainer.Page.PageViewClipper.PageView.PageViewInnerFrame.LeaveGamePage.LeaveButtonsContainer.LeaveButtonsContainer.LeaveGameButton.Activated)) do v:Disable() end end) end end)
     -- FPS counter (smoothed over 0.8 s windows)
     local _fpsLabel = _AK._fpsLbl
     local _fpsAcc, _fpsFrames = 0, 0
